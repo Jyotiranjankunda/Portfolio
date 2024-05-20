@@ -1,0 +1,59 @@
+#home{
+  border: 1px solid blue;
+  width: calc(100vw - 80px);
+  height: calc(100vh - 110px);
+  position: relative;
+  top: 110px;
+  left: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.socialLinks{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* border: 1px solid; */
+  padding: 0 10px;
+  position: fixed;
+  left: 0;
+}
+
+.socialLinks a img{
+  width: 35px;
+  transition: all 0.25s ease-in;
+}
+
+.socialLinks a img:hover{
+  transform: scale(1.1);
+}
+
+.info{
+  border: 1px solid red;
+}
+
+.photo{
+  border: 1px solid blue;
+}
+
+.image{
+  width: 500px;
+}
+
+.scroll{
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.scrollIndicator{
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background-color: #005249;
+  /* border: 1px solid blue; */
+}
