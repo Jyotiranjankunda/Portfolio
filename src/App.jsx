@@ -8,7 +8,7 @@ import Contact from './components/contact/Contact';
 
 const App = () => {
   return (
-    <div>
+    <div id="container">
       <Navbar />
       <Home />
       <Aboutme />
@@ -16,27 +16,6 @@ const App = () => {
       <Projects />
       <Experience />
       <Contact />
-      {/* <div className="section">
-        <Navbar />
-      </div> */}
-      {/* <div className="section">
-        <Home />
-      </div>
-      <div className="section">
-        <Aboutme />
-      </div>
-      <div className="section">
-        <Skills />
-      </div>
-      <div className="section">
-        <Projects />
-      </div>
-      <div className="section">
-        <Experience />
-      </div>
-      <div className="section">
-        <Contact />
-      </div> */}
     </div>
   );
 };

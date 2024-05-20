@@ -1,10 +1,9 @@
 color palette
 C8FACD
-
 00AB55
 007B55
 005249
-75957B
+// 75957B
 
 Buttons - 007B55
 Text (Heading, nav links) => 005249

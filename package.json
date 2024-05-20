@@ -10,8 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ap.cx/react-fullpage": "^0.3.0",
+    "@fullpage/react-fullpage": "^0.1.42",
+    "@tsparticles/all": "^3.4.0",
+    "@tsparticles/react": "^3.0.0",
+    "fullpage.js": "^4.0.22",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-particles": "^2.12.2",
+    "react-router-dom": "^6.23.1",
+    "react-simple-typewriter": "^5.0.1",
+    "tsparticles": "^3.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

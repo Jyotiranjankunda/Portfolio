@@ -1,5 +1,5 @@
 .home{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: calc(100vw - 120px);
   height: calc(100vh - 100px);
   position: relative;
@@ -8,8 +8,8 @@
   right: 60px;
   display: flex;
   align-items: center;
+  gap: 10px;
   justify-content: space-around;
-  position: relative;
 }
 
 .socialLinks{
@@ -17,9 +17,8 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  border: 1px solid;
+  /* border: 1px solid; */
   width: 60px;
-  /* padding: 0 10px; */
   position: fixed;
   left: 0;
 }
@@ -33,35 +32,131 @@
   transform: scale(1.1);
 }
 
-.info{
-  border: 1px solid red;
-}
-
-.photo{
-  border: 1px solid blue;
-}
-
 .image{
   width: 500px;
 }
 
-.scroll{
-  border: 1px solid;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  gap: 20px;
-  /* padding: 0 10px; */
-  position: fixed;
-  right: 0;
-  width: 40px;
+.dummy{
+  width: 100vw;
+  height: 0;
 }
 
-.scrollIndicator{
-  height: 15px;
-  width: 15px;
-  border-radius: 100%;
+.info{
+  padding: 10px;
+  line-height: 50px;
+}
+
+.name{
+  font-size:2.5rem;
+  font-weight: 500;
+  color: #007B55;
+}
+
+.name span{
+  font-weight: bold;
+  color: #005249;
+}
+
+.typewriter{
+  font-size: 2rem;
+  font-family: "Fira Code", monospace;
+  font-weight: bold;
+  color: #007B55;
+}
+
+.tagline{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.button{
+  background-color: #007b55;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover {
   background-color: #005249;
-  /* border: 1px solid blue; */
+}
+
+.photo{
+  /* border: 1px solid red; */
+  width: 500px;
+}
+
+.photo img{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .info{
+    /* border: 1px solid blue; */
+    line-height: 6vmin;
+    flex: 2;
+  }
+
+  .name{
+    font-size: 5vmin;
+  }
+
+  .typewriter{
+    font-size: 4vmin;
+  }
+
+  .tagline{
+    font-size: 3vmin;
+  }
+
+  .button {
+    font-size: 3vmin;
+    padding: 10px;
+  }
+
+  .photo{
+    /* border: 1px solid red; */
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home{
+    /* border: 1px solid; */
+    flex-direction: column-reverse;
+    height: max-content;
+    /* padding: 10px  0; */
+  }
+
+  .photo{
+    width: 85%;
+  }
+
+  .info{
+    width: 85%;
+    line-height: 6vmin;
+  }
+
+  .name{
+    font-size: 5vmin;
+  }
+
+  .typewriter{
+    font-size: 4vmin;
+  }
+
+  .tagline{
+    font-size: 2.5vmin;
+  }
+
+  .button {
+    font-size: 2.5vmin;
+    padding: 10px;
+  }
 }
