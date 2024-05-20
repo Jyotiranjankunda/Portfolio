@@ -1,14 +1,38 @@
 .aboutme{
   border: 1px solid blue;
-  width: calc(100vw - 120px);
+  width: calc(100vw - 60px);
   height: calc(100vh - 100px);
   position: relative;
   top: 100px;
   left: 60px;
-  right: 60px;
+  /* right: 60px; */
 }
 
 .dummy{
   width: 100vw;
   height: 0;
+}
+
+.whoami{
+  border: 1px solid red;
+  font-family: "Rubik Mono One", monospace;
+  font-size: 15rem;
+  text-align: center;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  color: #00000019;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.heading{
+  font-size: 9vmin;
+  text-align: center;
+  font-family: "Rubik Mono One", monospace;
+  margin-top: 10px;
+  color: #005249;
 }
