@@ -10,7 +10,7 @@
   left: 0;
   z-index: 900;
   font-weight: 500;
-  /* border: 1px solid blue; */
+
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(8px);
@@ -25,7 +25,7 @@
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
-  background-color: #5be584;
+  background-color: var(--shade-dark);
 }
 
 .navlinks .links {
@@ -44,16 +44,16 @@
   transition: all 0.3s ease;
   padding: 7px;
   border-radius: 3px;
-  color: #005249;
+  color: var(--shade-dark);
 }
 
 .links li a:hover {
-  background-color: #005249;
+  background-color: var(--shade-dark);
   color: white;
 }
 
 .button {
-  background-color: #007b55;
+  background-color: var(--shade-medium);
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -65,7 +65,7 @@
 }
 
 .button:hover {
-  background-color: #005249;
+  background-color: var(--shade-dark);
 }
 
 .bars,
@@ -98,11 +98,11 @@
     background: #c8facd;
 
     background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
   }
 
   .bars,
@@ -127,7 +127,7 @@
     top: 0;
     right: 0;
     height: 100vh;
-    background-color: #005249;
+    background-color: var(--shade-dark);
     width: 50%;
     animation: menu 0.7s linear;
     background: rgba(0, 82, 73, 0.9);
@@ -162,11 +162,7 @@
     font-size: 1.1rem;
   }
 
-  .menu ul li:hover {
-    background-color: #007b55;
-  }
-
-  .button:hover {
-    background-color: #007b55;
+  .menu ul li:hover, .button:hover {
+    background-color: var(--shade-medium);
   }
 }

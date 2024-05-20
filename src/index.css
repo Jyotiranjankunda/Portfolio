@@ -6,11 +6,18 @@
   box-sizing: border-box;
 }
 
+:root{
+  --shade-light: #C8FACD;
+  --shade-light-medium: #00AB55;
+  --shade-medium: #007B55;
+  --shade-dark: #005249;
+}
+
 body{
   height: 100%;
   width: 100%;
   font-family: "Inter", sans-serif;
-  background-color: #C8FACD;
+  background-color: var(--shade-light);
 }
 
 html{
@@ -20,5 +27,3 @@ html{
 body::-webkit-scrollbar{
   display: none;
 }
-/* font-family: "Fira Code", monospace; */
-/* font-family: "Rubik Mono One", monospace; */

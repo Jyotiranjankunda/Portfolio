@@ -49,19 +49,19 @@
 .name{
   font-size:2.5rem;
   font-weight: 500;
-  color: #007B55;
+  color: var(--shade-medium);
 }
 
 .name span{
   font-weight: bold;
-  color: #005249;
+  color: var(--shade-dark);
 }
 
 .typewriter{
   font-size: 2rem;
   font-family: "Fira Code", monospace;
   font-weight: bold;
-  color: #007B55;
+  color: var(--shade-medium);
 }
 
 .tagline{
@@ -71,7 +71,7 @@
 }
 
 .button{
-  background-color: #007b55;
+  background-color: var(--shade-medium);
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -83,11 +83,10 @@
 }
 
 .button:hover {
-  background-color: #005249;
+  background-color: var(--shade-dark);
 }
 
 .photo{
-  /* border: 1px solid red; */
   width: 500px;
 }
 
@@ -98,7 +97,6 @@
 
 @media screen and (max-width: 992px) {
   .info{
-    /* border: 1px solid blue; */
     line-height: 6vmin;
     flex: 2;
   }
@@ -121,17 +119,14 @@
   }
 
   .photo{
-    /* border: 1px solid red; */
     width: 50%;
   }
 }
 
 @media screen and (max-width: 800px) {
   .home{
-    /* border: 1px solid; */
     flex-direction: column-reverse;
     height: max-content;
-    /* padding: 10px  0; */
   }
 
   .photo{
@@ -152,11 +147,11 @@
   }
 
   .tagline{
-    font-size: 2.5vmin;
+    font-size: 3vmin;
   }
 
   .button {
-    font-size: 2.5vmin;
+    font-size: 3vmin;
     padding: 10px;
   }
 }
