@@ -1,13 +1,15 @@
-#navbar {
+.navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: 110px;
+  /* width: 100%; */
+  width: calc(100vw - 100px);
+  height: 100px;
   padding: 10px 0;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2px);
@@ -17,7 +19,7 @@
   z-index: 900;
 }
 
-#navbar .dp {
+.navbar .dp {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -34,6 +36,10 @@
   gap: 50px;
 }
 
+.links a{
+  text-decoration: none;
+}
+
 .links li {
   font-size: 1.2rem;
   cursor: pointer;
@@ -41,6 +47,7 @@
   transition: all 0.3s ease;
   padding: 7px;
   border-radius: 3px;
+  color: #005249;
 }
 
 .links li:hover {
@@ -86,8 +93,8 @@
   }
 }
 
-@media screen and (max-width: 780px) {
-  #navbar {
+@media screen and (max-width: 800px) {
+  .navbar {
     justify-content: flex-end;
     padding: 0;
     height: 80px;

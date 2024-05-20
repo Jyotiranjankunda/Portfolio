@@ -7,7 +7,7 @@ import bg from '../../assets/bg.png';
 
 const Home = () => {
   return (
-    <div id={classes.home}>
+    <div className={classes.home} id="home">
       <div className={classes.socialLinks}>
         <a href='mailto:jrk2001.mymail@gmail.com'>
           <img src={gmail} alt='' />
@@ -38,8 +38,8 @@ const Home = () => {
         <img src={bg} alt="" className={classes.image} />
       </div>
       <div className={classes.scroll}>
-        {[1, 2, 3, 4, 5, 6].map((item, index) => (
-          <span className={classes.scrollIndicator} key={index}></span>
+        {[1, 2, 3, 4, 5, 6].map((item) => (
+          <span className={classes.scrollIndicator} key={item}></span>
         ))}
       </div>
     </div>

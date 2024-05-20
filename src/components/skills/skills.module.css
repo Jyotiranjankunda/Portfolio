@@ -1,0 +1,9 @@
+.skills{
+  border: 1px solid blue;
+  width: calc(100vw - 120px);
+  height: calc(100vh - 100px);
+  position: relative;
+  top: 100px;
+  left: 60px;
+  right: 60px;
+}

@@ -10,20 +10,20 @@ const Navbar = () => {
   };
 
   return (
-    <div id={classes.navbar}>
+    <div className={classes.navbar} id='navbar'>
       <a href='#home'><img src={dp} alt='DP' className={classes.dp} /></a>
       <div className={classes.navlinks}>
         <ul className={classes.links}>
           <a href="#home">
             <li>Home</li>
           </a>
-          <a href="#about">
+          <a href="#aboutme">
             <li>About Me</li>
           </a>
           <a href="#skills">
             <li>Skills</li>
           </a>
-          <a href="projects">
+          <a href="#projects">
             <li>Projects</li>
           </a>
           <a href="#experience">
