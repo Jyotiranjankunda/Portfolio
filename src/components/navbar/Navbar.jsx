@@ -1,6 +1,7 @@
 import classes from './navbar.module.css';
 import dp from '../../assets/dp.png';
 import { useState } from 'react';
+import contact from "../../assets/contact.png"
 
 const Navbar = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -38,6 +39,9 @@ const Navbar = () => {
           <a href='#dummy-contact' className={classes.button}>
             Get In Touch
           </a>
+          <div className={classes.send}>
+            <img src={contact} alt="" className={classes.contact} />
+          </div>
         </div>
 
         {isClicked ? (
