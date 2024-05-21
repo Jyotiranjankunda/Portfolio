@@ -32,6 +32,26 @@
   transform: scale(1.1);
 }
 
+.codingLinks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid; */
+  width: 60px;
+  position: fixed;
+  right: 0;
+}
+
+.codingLinks a img{
+  width: 35px;
+  transition: all 0.25s ease-in;
+}
+
+.codingLinks a img:hover{
+  transform: scale(1.1);
+}
+
 .image{
   width: 500px;
 }
@@ -123,14 +143,14 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .home{
     flex-direction: column-reverse;
     height: max-content;
   }
 
   .photo{
-    width: 85%;
+    width: 80%;
   }
 
   .info{
@@ -153,5 +173,9 @@
   .button {
     font-size: 3vmin;
     padding: 10px;
+  }
+
+  .socialLinks a img, .codingLinks a img{
+    width: 30px;
   }
 }
