@@ -1,12 +1,12 @@
 .contact{
   /* border: 1px solid blue; */
   width: calc(100vw - 120px);
-  height: calc(100vh - 100px);
+  height: calc(100vh - 70px);
   position: relative;
-  top: 100px;
+  top: 70px;
   left: 60px;
   right: 60px;
-  background-color: #005249;
+  background-color: var(--shade-dark);
   border-radius: 10px;
 }
 

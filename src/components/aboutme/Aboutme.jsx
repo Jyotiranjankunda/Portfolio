@@ -21,26 +21,24 @@ const Aboutme = () => {
             <img src={aboutPhoto} alt='' />
             <div className={classes.about}>
               <p>
-                Hello! I&apos;m Jyotiranjan Kunda, a simple yet ambitious soul with a zest
-                for life. Born in Odisha and raised in the serene town of Haridwar since my childhood, I&apos;ve grown to appreciate the beauty of nature and the
-                value of close-knit communities. Whether it&apos;s cycling through scenic
-                routes or indulging in fitness routines, I find joy in staying active and
-                embracing the great outdoors. 🌳🚴‍♂️
+                I am a B.Tech graduate in Computer Science & Engineering from Veer
+                Surendra Sai University of Technology with a CGPA of 9.04. My passion lies
+                in problem-solving, logic building, and continuously exploring new
+                technologies.
               </p>
               <p>
-                When I&apos;m not immersed in the world of technology, you&apos;ll find me
-                enjoying the simpler pleasures of life. I love listening to songs,
-                watching movies, and spending quality time with family and friends. My
-                interests also extend to playing indoor games like carrom, chess, and
-                table tennis, as well as outdoor sports like cricket and badminton. These
-                activities keep me balanced and energized. 🏏♟️
+                I am proficient in a versatile tech stack, including languages like C/C++,
+                Java, and JavaScript, and have experience with MERN stack. My current role
+                as an Associate Software Engineer Intern at Incture Technologies has
+                enhanced my skills in project management, performance optimization, and
+                fullstack development.
               </p>
               <p>
-                In my quiet moments, I dive into the world of books, reading novels and
-                biographies that inspire and broaden my horizons. With high aspirations
-                and a passion for continuous growth, I strive to lead a fulfilling and
-                enriching life. Let&apos;s connect and share the wonders of our journeys!
-                📚✨
+                In addition, I am an avid competitive programmer, having solved over 500+
+                problems on platforms such as LeetCode, GeeksforGeeks, and CodeChef.
+                Looking ahead, my aspirations are to contribute to impactful projects,
+                continuously learn and grow, and make a tangible difference in technology.
+                ✨
               </p>
             </div>
           </div>

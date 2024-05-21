@@ -3,7 +3,7 @@
   width: calc(100vw - 120px);
   /* height: calc(100vh - 100px); */
   position: relative;
-  top: 100px;
+  top: 70px;
   left: 60px;
   right: 60px;
 }
@@ -90,7 +90,7 @@
   width: 40px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .skillMain{
     grid-template-columns: repeat(1, 1fr);
   }
