@@ -20,19 +20,15 @@ const Skills = () => {
   const skillSet = [
     { name: 'HTML', percentage: 90, img: html },
     { name: 'CSS', percentage: 85, img: css },
-    { name: 'Sass', percentage: 60, img: sass },
     { name: 'Javascript', percentage: 80, img: js },
     { name: 'ReactJs', percentage: 75, img: react },
     { name: 'NodeJs', percentage: 50, img: node },
-    { name: 'ExpressJs', percentage: 50, img: express },
     { name: 'MongoDB', percentage: 50, img: mongodb },
     { name: 'MySQL', percentage: 70, img: mysql },
-    { name: 'C', percentage: 80, img: c },
-    { name: 'CPP', percentage: 90, img: cpp },
+    { name: 'C++', percentage: 90, img: cpp },
     { name: 'Java', percentage: 50, img: java },
     { name: 'Git', percentage: 60, img: git },
     { name: 'GitHub', percentage: 50, img: github },
-    { name: 'Postman', percentage: 50, img: postman },
     { name: 'Figma', percentage: 50, img: figma },
   ];
 
@@ -47,19 +43,7 @@ const Skills = () => {
             </h2>
             <p>Here is my skill set to represent my expertise.</p>
           </div>
-          {/* <div className={classes.skillMain}>
-            {Object.keys(skillSet).map((item) => (
-              <div className={classes.skillBar} key={item}>
-                <div className={classes.info}>
-                  <p className={classes.skillName}>{item}</p>
-                  <p className={classes.percent}>{skillSet[item]}%</p>
-                </div>
-                <div className={classes.bar}>
-                  <span style={{ width: `${skillSet[item]}%` }}></span>
-                </div>
-              </div>
-            ))}
-          </div> */}
+
           <div className={classes.skillMain}>
             {skillSet.map((skill, index) => (
               <div className={classes.skillBar} key={index}>

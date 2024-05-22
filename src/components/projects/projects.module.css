@@ -1,5 +1,4 @@
-.projects{
-  /* border: 1px solid blue; */
+.projects {
   width: calc(100vw - 120px);
   height: calc(100vh - 70px);
   position: relative;
@@ -16,37 +15,35 @@
   justify-content: space-evenly;
 }
 
-.projects::-webkit-scrollbar{
+.projects::-webkit-scrollbar {
   display: none;
 }
 
-.dummy{
+.dummy {
   width: 100vw;
   height: 0;
 }
 
-.heading{
+.heading {
   font-size: 9vmin;
   text-align: center;
-  font-family: "Rubik Mono One", monospace;
+  font-family: 'Rubik Mono One', monospace;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--shade-light);
-  /* border: 1px solid yellow; */
 }
 
-.description{
+.description {
   text-align: center;
   font-size: 1.1rem;
   color: var(--shade-light);
-  /* border: 1px solid yellow; */
   margin-bottom: 1rem;
 }
 
-.cards{
-  display:flex;
+.cards {
+  display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
   gap: 30px;
@@ -54,37 +51,38 @@
   padding-bottom: 10px;
 }
 
-.cards::-webkit-scrollbar{
+.cards::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
-.cards::-webkit-scrollbar-track{
+.cards::-webkit-scrollbar-track {
   background-color: var(--shade-dark);
   border-radius: 25px;
 }
 
-.cards::-webkit-scrollbar-thumb{
+.cards::-webkit-scrollbar-thumb {
   background-color: var(--shade-light);
   border-radius: 25px;
 }
 
 @media screen and (max-width: 768px) {
-  .heading{
-    /* border: 1px solid yellow; */
-    padding: 0.6rem;
+  .projects {
+    height: 150vh;
+    width: calc(100vw - 60px);
+    left: 30px;
   }
-  .description{
+  .heading {
+    padding: 0.6rem;
+    padding-top: 1.2rem;
+  }
+  .description {
     font-size: 1rem;
   }
-  .cards{
+  .cards {
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: scroll;
     align-items: center;
-  }
-
-  .projects{
-    height: 150vh;
   }
 }

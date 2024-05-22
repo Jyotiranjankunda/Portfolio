@@ -1,14 +1,26 @@
 import classes from './navbar.module.css';
 import dp from '../../assets/dp.png';
-import { useState } from 'react';
-// import contact from '../../assets/contact.png';
+import { useState, useEffect } from 'react';
+import { FaMessage } from 'react-icons/fa6';
 
 const Navbar = () => {
   const [isClicked, setIsClicked] = useState(false);
 
-  const handleClick = () => {
-    setIsClicked((prev) => !prev);
-  };
+  useEffect(() => {
+    const scrollToTop = () => {
+      const userAgent = navigator.userAgent.toLowerCase();
+      if (userAgent.includes('safari') && !userAgent.includes('chrome')) {
+        document.body.scrollTop = 0;
+      } else {
+        document.documentElement.scrollTop = 0;
+      }
+
+      if (window.location.hash !== '#dummy-home') {
+        window.history.replaceState(null, null, '#dummy-home');
+      }
+    };
+    scrollToTop();
+  }, []);
 
   return (
     <>
@@ -30,46 +42,38 @@ const Navbar = () => {
             <li>
               <a href='#dummy-projects'>Projects</a>
             </li>
-            <li>
-              <a href='#dummy-contact'>Contact Me</a>
-            </li>
           </ul>
         </div>
+        <div className={classes.contactme}>
+          <a href='#dummy-contact'>
+            <FaMessage className={classes.contactIcon} />
+            Contact Me
+          </a>
+        </div>
       </div>
-      {/* {isClicked ? (
-          <span className={classes.cross}>
-            <i
-              className='fa-solid fa-xmark cross'
-              onClick={handleClick}></i>
-          </span>
-        ) : (
-          <span className={classes.bars}>
-            <i className='fa-solid fa-bars bars' onClick={handleClick}></i>
-          </span>
-        )} */}
 
-      <span className={isClicked ? classes.cross : classes.bars}>
-        <i
-          className={`fa-solid fa-${isClicked ? 'xmark' : 'bars'}`}
-          onClick={handleClick}></i>
+      <span
+        className={isClicked ? classes.cross : classes.bars}
+        onClick={() => setIsClicked(!isClicked)}>
+        <i className={`fa-solid fa-${isClicked ? 'xmark' : 'bars'}`}></i>
       </span>
 
       {isClicked && (
-        <div className={classes.menu}>
+        <div className={`${classes.menu} ${isClicked ? 'open' : ''}`}>
           <ul className={classes.links}>
-            <li onClick={handleClick}>
+            <li onClick={() => setIsClicked(!isClicked)}>
               <a href='#dummy-home'>Home</a>
             </li>
-            <li onClick={handleClick}>
+            <li onClick={() => setIsClicked(!isClicked)}>
               <a href='#dummy-about'>About Me</a>
             </li>
-            <li onClick={handleClick}>
+            <li onClick={() => setIsClicked(!isClicked)}>
               <a href='#dummy-skills'>Skills</a>
             </li>
-            <li onClick={handleClick}>
+            <li onClick={() => setIsClicked(!isClicked)}>
               <a href='#dummy-projects'>Projects</a>
             </li>
-            <li onClick={handleClick}>
+            <li onClick={() => setIsClicked(!isClicked)}>
               <a href='#dummy-contact'>Contact Me</a>
             </li>
           </ul>

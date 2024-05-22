@@ -5,10 +5,7 @@ import linkedin from '../../assets/linkedin.png';
 import github from '../../assets/github.png';
 import ParticlesPage from '../../pages/ParticlesPage';
 import { Typewriter } from 'react-simple-typewriter';
-import photo from "../../assets/photo.png";
-import leetcode from "../../assets/leetcode.png";
-import gfg from "../../assets/gfg.png";
-import codechef from "../../assets/codechef.png";
+import photo from '../../assets/photo.png';
 
 const Home = () => {
   return (
@@ -16,20 +13,6 @@ const Home = () => {
       <ParticlesPage />
       <div className={classes.dummy} id='dummy-home'></div>
       <div className={classes.home} id='home'>
-        <div className={classes.socialLinks}>
-          <a href='mailto:jrk2001.mymail@gmail.com'>
-            <img src={gmail} alt='' />
-          </a>
-          <a href='https://www.instagram.com/_jyotiranjan_kunda_/' target='_blank'>
-            <img src={instagram} alt='' />
-          </a>
-          <a href='https://www.linkedin.com/in/jyotiranjan-kunda-609b47177/' target='_blank'>
-            <img src={linkedin} alt='' />
-          </a>
-          <a href='https://github.com/Jyotiranjankunda' target='_blank'>
-            <img src={github} alt='' />
-          </a>
-        </div>
         <div className={classes.info}>
           <p className={classes.name}>
             Hi, I am <span>Jyotiranjan Kunda</span>
@@ -56,17 +39,22 @@ const Home = () => {
           </a>
         </div>
         <div className={classes.photo}>
-          <img src={photo} alt='' className={classes.image} />
+          <img src={photo} alt='' />
         </div>
-        <div className={classes.codingLinks}>
-          <a href='https://leetcode.com/Jyotiranjan_Kunda/' target='_blank'>
-            <img src={leetcode} alt='' />
+        <div className={classes.socialLinks}>
+          <a href='mailto:jrk2001.mymail@gmail.com'>
+            <img src={gmail} alt='' />
           </a>
-          <a href='https://www.geeksforgeeks.org/user/jyotiranjan_kunda/' target='_blank'>
-            <img src={gfg} alt='' />
+          <a href='https://www.instagram.com/_jyotiranjan_kunda_/' target='_blank'>
+            <img src={instagram} alt='' />
           </a>
-          <a href='https://www.codechef.com/users/jyotiranjan123' target='_blank'>
-            <img src={codechef} alt='' />
+          <a
+            href='https://www.linkedin.com/in/jyotiranjan-kunda-609b47177/'
+            target='_blank'>
+            <img src={linkedin} alt='' />
+          </a>
+          <a href='https://github.com/Jyotiranjankunda' target='_blank'>
+            <img src={github} alt='' />
           </a>
         </div>
       </div>

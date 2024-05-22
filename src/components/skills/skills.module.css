@@ -1,7 +1,5 @@
 .skills{
-  /* border: 1px solid blue; */
   width: calc(100vw - 120px);
-  /* height: calc(100vh - 100px); */
   position: relative;
   top: 70px;
   left: 60px;
@@ -14,11 +12,9 @@
 }
 
 .skillSection{
-  /* border: 1px solid; */
   width: 100%;
   height: auto;
   padding: 40px 10%;
-  /* background-color: var(---s); */
 }
 
 .header{
@@ -31,16 +27,13 @@
 }
 
 .heading{
-  /* border: 1px solid blue; */
   font-size: 9vmin;
   text-align: center;
   font-family: "Rubik Mono One", monospace;
-  /* height: 100px; */
   color: var(--shade-dark);
 }
 
 .header p{
-  /* color: var(--shade-dark); */
   font-size: 1.2rem;
 }
 
@@ -79,7 +72,6 @@
 }
 
 .skillBar .bar span{
-  /* width: 50%; */
   height: 100%;
   position: absolute;
   background: linear-gradient(to right, var(--shade-dark), var(--shade-medium), var(--shade-light-medium));
@@ -91,6 +83,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .skills{
+    width: calc(100vw - 60px);
+    left: 30px;
+  }
+
   .skillMain{
     grid-template-columns: repeat(1, 1fr);
   }

@@ -1,30 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:wght@100..900&family=Rubik+Mono+One&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
-  --shade-light: #C8FACD;
-  --shade-light-medium: #00AB55;
-  --shade-medium: #007B55;
+:root {
+  --shade-light: #c8facd;
+  --shade-light-medium: #00ab55;
+  --shade-medium: #007b55;
   --shade-dark: #005249;
   --navbar: #9ac5af;
 }
 
-body{
+body {
   height: 100%;
   width: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: var(--shade-light);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }

@@ -46,35 +46,49 @@
   color: white;
 }
 
-.button {
-  background-color: var(--shade-medium);
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  color: white;
-  font-size: 1.08rem;
-  padding: 12px;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
-
-.button:hover {
+.contactme {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
   background-color: var(--shade-dark);
 }
 
+.contactme a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--shade-light);
+}
+
 .bars,
-.cross,
-.menu {
+.cross {
   display: none;
 }
 
+.menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -50%;
+  height: 100vh;
+  background-color: var(--navbar);
+  width: 50%;
+  transition: right 0.4s ease, width 0.4s ease;
+  z-index: 999;
+}
+
 @media screen and (max-width: 992px) {
-  .navbar{
+  .navbar {
     justify-content: center;
     gap: 20px;
   }
 
-  .navlinks .links{
+  .navlinks .links {
     gap: 30px;
   }
 
@@ -101,41 +115,34 @@
     font-size: 1.2rem;
     cursor: pointer;
     z-index: 1000;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--navbar);
   }
 
-  .navlinks,
-  .getintouch {
+  .cross {
+    background-color: var(--shade-dark);
+  }
+
+  .cross i {
+    filter: invert(1);
+  }
+
+  .navlinks {
     display: none;
   }
 
-  /* .links li a{
-    color: var(--shade-light);
-  } */
-
-  .links li a:hover{
+  .links li a:hover {
     background-color: var(--shade-dark);
     color: var(--shade-light);
   }
 
   .menu {
-    display: block;
-    position: fixed;
-    top: 0;
     right: 0;
-    height: 100vh;
-    background-color: var(--navbar);
-    width: 50%;
-    animation: menu 0.4s linear;
-    z-index: 999;
-  }
-
-  @keyframes menu {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 50%;
-    }
   }
 
   .menu ul {
@@ -151,9 +158,10 @@
   .menu ul li {
     color: white;
     font-size: 1.1rem;
+    font-weight: 600;
   }
 
-  .menu ul li a:hover{
-    background-color: var(--shade-medium);
+  .menu ul li a:hover {
+    background-color: var(--shade-dark);
   }
 }

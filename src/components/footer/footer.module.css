@@ -1,19 +1,36 @@
 .footer{
-  /* z-index: 10777700; */
-  /* border: 1px solid red; */
   position: relative;
-  /* top: 70px; */
-  left: 0;
-  bottom: 0;
+  top: 70px;
   font-size: 1.1rem;
-  text-align: center;
   padding: 1rem 0;
-  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.socialLinks{
+  display: none;
+}
+
+.socialLinks a img{
+  width: 35px;
+  transition: all 0.25s ease-in;
+}
+
+.socialLinks a img:hover{
+  transform: scale(1.1);
 }
 
 @media screen and (max-width:768px) {
   .footer{
     font-size: 1rem;
-    margin-top: 5rem;
+  }
+
+  .socialLinks{
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 }

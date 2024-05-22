@@ -92,7 +92,7 @@ const Aboutme = () => {
                 iconStyle={{ background: '#C8FACD', color: '#005249' }}
                 contentStyle={{ background: '#C8FACD', color: '#005249' }}
                 icon={<MdWork />}>
-                <h3 className='vertical-timeline-element-title'>Company</h3>
+                <h3 className='vertical-timeline-element-title'>Internship</h3>
                 <h4 className='vertical-timeline-element-subtitle'>
                   Incture Technologies (Jan 2024 - Present)
                 </h4>
