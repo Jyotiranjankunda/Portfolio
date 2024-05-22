@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <ParticlesPage />
-      <div className={classes.dummy} id='dummy-home'></div>
+      <div className={classes.dummy} id='Home'></div>
       <div className={classes.home} id='home'>
         <div className={classes.info}>
           <p className={classes.name}>

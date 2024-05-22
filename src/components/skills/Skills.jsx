@@ -1,19 +1,15 @@
 import classes from './skills.module.css';
 import html from '../../assets/html.png';
 import css from '../../assets/css.png';
-import sass from '../../assets/sass.png';
 import js from '../../assets/js.png';
 import react from '../../assets/react.png';
 import node from '../../assets/node.png';
-import express from '../../assets/express.png';
 import mongodb from '../../assets/mongodb.png';
 import mysql from '../../assets/mysql.png';
-import c from '../../assets/c.png';
 import cpp from '../../assets/cpp.png';
 import java from '../../assets/java.png';
 import git from '../../assets/git.png';
 import github from '../../assets/github.png';
-import postman from '../../assets/postman.png';
 import figma from '../../assets/figma.png';
 
 const Skills = () => {
@@ -34,7 +30,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className={classes.dummy} id='dummy-skills'></div>
+      <div className={classes.dummy} id='Skills'></div>
       <div className={classes.skills} id='skills'>
         <section className={classes.skillSection}>
           <div className={`${classes.header} ${classes.skillHead}`}>

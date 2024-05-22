@@ -15,8 +15,8 @@ const Navbar = () => {
         document.documentElement.scrollTop = 0;
       }
 
-      if (window.location.hash !== '#dummy-home') {
-        window.history.replaceState(null, null, '#dummy-home');
+      if (window.location.hash !== '#Home') {
+        window.history.replaceState(null, null, '#Home');
       }
     };
     scrollToTop();
@@ -25,27 +25,27 @@ const Navbar = () => {
   return (
     <>
       <div className={classes.navbar} id='navbar'>
-        <a href='#dummy-home'>
+        <a href='#Home'>
           <img src={dp} alt='DP' className={classes.dp} />
         </a>
         <div className={classes.navlinks}>
           <ul className={classes.links}>
             <li>
-              <a href='#dummy-home'>Home</a>
+              <a href='#Home'>Home</a>
             </li>
             <li>
-              <a href='#dummy-about'>About Me</a>
+              <a href='#About'>About Me</a>
             </li>
             <li>
-              <a href='#dummy-skills'>Skills</a>
+              <a href='#Skills'>Skills</a>
             </li>
             <li>
-              <a href='#dummy-projects'>Projects</a>
+              <a href='#Projects'>Projects</a>
             </li>
           </ul>
         </div>
         <div className={classes.contactme}>
-          <a href='#dummy-contact'>
+          <a href='#Contact'>
             <FaMessage className={classes.contactIcon} />
             Contact Me
           </a>
@@ -62,19 +62,19 @@ const Navbar = () => {
         <div className={`${classes.menu} ${isClicked ? 'open' : ''}`}>
           <ul className={classes.links}>
             <li onClick={() => setIsClicked(!isClicked)}>
-              <a href='#dummy-home'>Home</a>
+              <a href='#Home'>Home</a>
             </li>
             <li onClick={() => setIsClicked(!isClicked)}>
-              <a href='#dummy-about'>About Me</a>
+              <a href='#About'>About Me</a>
             </li>
             <li onClick={() => setIsClicked(!isClicked)}>
-              <a href='#dummy-skills'>Skills</a>
+              <a href='#Skills'>Skills</a>
             </li>
             <li onClick={() => setIsClicked(!isClicked)}>
-              <a href='#dummy-projects'>Projects</a>
+              <a href='#Projects'>Projects</a>
             </li>
             <li onClick={() => setIsClicked(!isClicked)}>
-              <a href='#dummy-contact'>Contact Me</a>
+              <a href='#Contact'>Contact Me</a>
             </li>
           </ul>
         </div>

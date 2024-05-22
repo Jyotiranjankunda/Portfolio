@@ -4,7 +4,7 @@ import contactme from '../../assets/contactme.png';
 const Contact = () => {
   return (
     <>
-      <div className={classes.dummy} id='dummy-contact'></div>
+      <div className={classes.dummy} id='Contact'></div>
       <div className={classes.contact} id='contact'>
         <h2 className={classes.heading}>Contact Me</h2>
         <div className={classes.left}>

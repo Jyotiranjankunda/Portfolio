@@ -13,7 +13,7 @@ import { MdWork } from 'react-icons/md';
 const Aboutme = () => {
   return (
     <>
-      <div className={classes.dummy} id='dummy-about'></div>
+      <div className={classes.dummy} id='About'></div>
       <div className={classes.aboutme} id='aboutme'>
         <p className={classes.heading}>About Me</p>
         <div className={classes.sections}>
